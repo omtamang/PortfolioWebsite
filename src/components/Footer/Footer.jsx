@@ -34,7 +34,7 @@ export default function Footer() {
                         SOCIAL
                     </div>
 
-                    <div className="flex-col md:mt-0 mt-1 text-2xl justify-around text-start w-[400px] m-auto md:w-[200px] md:text-3xl md:pt-3 cursor-pointer">
+                    <div className="md:flex flex-col text-start md:mt-0 mt-1 text-2xl md:justify-between w-[400px] m-auto md:w-[200px] md:text-3xl md:pt-3 cursor-pointer">
                         <div>
                             <FontAwesomeIcon className="hover:text-gray-400" icon={faInstagram}/>
                         </div>

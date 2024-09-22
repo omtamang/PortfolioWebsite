@@ -14,9 +14,9 @@ export default function Header(){
     return (
         <div className="fixed w-full z-40 bg-inherit pt-7 pb-7 font-poopins">
             <nav className=" flex justify-between max-w-[400px] md:max-w-[1200px] m-auto">
-                <span className="text-xl font-light md:text-3xl cursor-pointer">Om Tamang 
+                <span className="text-xl font-light md:text-3xl cursor-pointer w-full">Om Tamang 
                 {isOpen ? (
-                    <ul className="transition ease-in-out delay-300 flex-col md:hidden font-normal text-sm space-y-3 text-center">
+                    <ul className="flex-col md:hidden font-normal text-sm space-y-3 text-center">
                         <li>Home</li>
                         <li>Work</li>
                         <li>About Me</li>
