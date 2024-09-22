@@ -1,5 +1,5 @@
 import { faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faLocation, faMapLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faLocation } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
