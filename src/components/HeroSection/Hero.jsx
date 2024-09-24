@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Hero() {
     return (
-        <div className="md:max-w-[1200px] max-w-[400px] m-auto md:flex justify-between font-poopins pt-[100px] md:h-screen md:pt-[120px]">
+        <div className="md:max-w-[1200px] px-4 m-auto md:flex justify-between font-poopins pt-[100px] md:h-screen md:pt-[120px]">
             <div>
                 <div className="md:py-8">
                     <p className="md:text-[64px] md:leading-tight text-3xl font-black font-poopins">
@@ -51,13 +51,13 @@ export default function Hero() {
 
             <div className="hidden md:text-5xl md:flex-col md:flex md:pt-[100px] cursor-pointer">
                 <div className="pb-4">
-                    <FontAwesomeIcon icon={faInstagram}/>
+                    <FontAwesomeIcon className="hover:text-green-500" icon={faInstagram}/>
                 </div>
                 <div className="pb-4">
-                    <FontAwesomeIcon icon={faLinkedin}/>
+                    <FontAwesomeIcon className="hover:text-green-500" icon={faLinkedin}/>
                 </div>
                 <div>
-                    <FontAwesomeIcon icon={faGithub}/>
+                    <FontAwesomeIcon className="hover:text-green-500" icon={faGithub}/>
                 </div>
             </div>
         </div>

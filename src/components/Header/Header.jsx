@@ -21,19 +21,19 @@ export default function Header(){
                         <li>Work</li>
                         <li>About Me</li>
                         <li className="pb-1 ">
-                        <button className="font-bold bg-black text-white rounded-full p-1 w-[140px] hover:text-black hover:bg-green-500">
-                            GET IN TOUCH
+                        <button className="font-bold bg-black text-white rounded-full p-1 w-[100px] hover:text-black hover:bg-green-500">
+                            HIRE ME
                         </button></li>
                     </ul>
                 ): null}</span>
 
-                <ul className="hidden md:flex md:justify-around font-medium w-5/12 bg-[#FFFFEA] rounded-full h-11 pt-2">
-                    <li className="cursor-pointer">Home</li>
+                <ul className="hidden md:flex md:justify-around font-medium w-8/12 h-11 pt-2">
+                    <li className="cursor-pointer hover:text-">Home</li>
                     <li className="cursor-pointer">Work</li>
                     <li className="cursor-pointer">About Me</li>
-                    <li className="pb-1 ">
-                    <button className=" transition ease-out duration-500 font-bold bg-black text-white rounded-full p-1 w-[140px] hover:text-black hover:bg-green-500">
-                        GET IN TOUCH
+                    <li className="">
+                    <button className=" transition ease-out duration-500 font-bold bg-black text-white rounded-full p-1 w-[100px] hover:text-black hover:bg-green-500">
+                        HIRE ME
                     </button></li>
                 </ul>
 

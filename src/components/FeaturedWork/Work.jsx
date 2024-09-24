@@ -1,6 +1,5 @@
 
 
-
 export default function Work() {
     return (
         <div className="mt-7 md:max-w-[1200px] max-w-[400px] m-auto h-auto">
