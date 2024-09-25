@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { Link } from "react-router-dom";
 
 export default function Header(){
     const [isOpen, setOpen] = useState(false);
@@ -17,8 +18,8 @@ export default function Header(){
                 <span className="text-xl font-light md:text-3xl cursor-pointer w-full">Om Tamang 
                 {isOpen ? (
                     <ul className="flex-col md:hidden font-normal text-sm space-y-3 text-center">
-                        <li>Home</li>
-                        <li>Work</li>
+                    <Link to={"/allwork"}><li>Home</li></Link>
+                        <Link to={"/allwork"}><li>Work</li></Link>
                         <li>About Me</li>
                         <li className="pb-1 ">
                         <button className="font-bold bg-black text-white rounded-full p-1 w-[100px] hover:text-black hover:bg-green-500">
@@ -28,9 +29,9 @@ export default function Header(){
                 ): null}</span>
 
                 <ul className="hidden md:flex md:justify-around font-medium w-8/12 h-11 pt-2">
-                    <li className="cursor-pointer hover:text-">Home</li>
-                    <li className="cursor-pointer">Work</li>
-                    <li className="cursor-pointer">About Me</li>
+                    <Link to={"/"}><li className="cursor-pointer hover:text-green-500">Home</li></Link>
+                    <Link to={"/allwork"}><li className="cursor-pointer hover:text-green-500">Work</li></Link>
+                    <li className="cursor-pointer hover:text-green-500">About Me</li>
                     <li className="">
                     <button className=" transition ease-out duration-500 font-bold bg-black text-white rounded-full p-1 w-[100px] hover:text-black hover:bg-green-500">
                         HIRE ME

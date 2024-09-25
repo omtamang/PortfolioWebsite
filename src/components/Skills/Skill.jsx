@@ -2,7 +2,7 @@
 
 export default function Skill() {
     return (
-        <div className="md:h-[790px] bg-slate-100">
+        <div className="md:h-[790px] h-[850px] bg-slate-100">
             <div className="font-poopins text-center pt-11 text-black">
                 <p className="md:text-[36px] text-[20px]">My Skills</p>
                 <p className="md:text-sm text-[14px] font-light">Things I am good at</p>

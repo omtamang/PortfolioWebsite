@@ -30,7 +30,7 @@ export default function Work() {
             </div>
 
             <div className="md:mt-[80px] mt-11 text-center font-poopins w-full">
-                <button className="transition ease-out duration-500 text-black font-light md:text-[36px] 
+                <button className="transition ease-out duration-500 text-black font-light md:text-[36px] animate-bounce
                  rounded-xl hover:text-gray-500 underline underline-offset-8 decoration-1 hover:decoration-2">
                     See More Work
                 </button>

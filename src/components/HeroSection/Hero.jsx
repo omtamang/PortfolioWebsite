@@ -1,6 +1,6 @@
 import { faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import Omtamang from "./Omtamang.pdf";
 
 export default function Hero() {
     return (
@@ -28,22 +28,25 @@ export default function Hero() {
                 </div>
 
                 <div className="flex justify-between">
-                    <div>
+                    <div className="flex space-x-11">
                         <button className="transition ease-out duration-500 bg-black text-white font-medium md:text-[24px] border 
                         rounded-full md:w-[180px] w-[120px] hover:bg-green-500 hover:text-black hover:font-bold">
                             View Work
                         </button>
+                        <a href={Omtamang} download={Omtamang}><button className="transition ease-out duration-500 bg-transparent text-black font-medium md:text-[24px] border-2 border-black rounded-full md:w-[200px] w-[120px] hover:font-bold">
+                           Download CV
+                        </button></a>
                     </div>
 
                     <div className="md:hidden text-2xl flex justify-between w-4/12">
                         <div className="pb-4">
-                            <FontAwesomeIcon icon={faInstagram}/>
+                            <a href="instagram.com/omtamang88/"><FontAwesomeIcon icon={faInstagram}/></a>
                         </div>
                         <div className="pb-4">
-                            <FontAwesomeIcon icon={faLinkedin}/>
+                            <a href="https://www.linkedin.com/in/om-tamang-31b1a0160/"><FontAwesomeIcon icon={faLinkedin}/></a>
                         </div>
                         <div>
-                            <FontAwesomeIcon icon={faGithub}/>
+                            <a href="https://github.com/omtamang"><FontAwesomeIcon icon={faGithub}/></a>
                         </div>
                     </div>
                 </div>
@@ -51,13 +54,13 @@ export default function Hero() {
 
             <div className="hidden md:text-5xl md:flex-col md:flex md:pt-[100px] cursor-pointer">
                 <div className="pb-4">
-                    <FontAwesomeIcon className="hover:text-green-500" icon={faInstagram}/>
+                    <a href="https://www.instagram.com/omtamang88/"><FontAwesomeIcon className="hover:text-green-500" icon={faInstagram}/></a>
                 </div>
                 <div className="pb-4">
-                    <FontAwesomeIcon className="hover:text-green-500" icon={faLinkedin}/>
+                    <a href="https://www.linkedin.com/in/om-tamang-31b1a0160/"><FontAwesomeIcon className="hover:text-green-500" icon={faLinkedin}/></a>
                 </div>
                 <div>
-                    <FontAwesomeIcon className="hover:text-green-500" icon={faGithub}/>
+                    <a href="https://github.com/omtamang"><FontAwesomeIcon className="hover:text-green-500" icon={faGithub}/></a>
                 </div>
             </div>
         </div>

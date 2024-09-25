@@ -1,33 +1,17 @@
-import Work from "./FeaturedWork/Work";
-import Footer from "./Footer/Footer";
-import Header from "./Header/Header";
-import Hero from "./HeroSection/Hero";
-import Skill from "./Skills/Skill";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./Home";
+import Allwork from "./FeaturedWork/Allwork"
 
 
 export default function Portfolio(){
     return(
         <div>
-            <div className="bg-[#FFFEBC]">
-                <Header/>
-            </div>
-
-            <div className="bg-[#FFFEBC]">
-                <Hero/>
-            </div>
-
-            <div>
-                <Skill/>
-            </div>
-
-            <div>
-                <Work/>
-            </div>
-
-            <div>
-                <Footer/>
-            </div>
-
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Home/>}/>
+                    <Route path="/allwork" element={<Allwork/>}/>
+                </Routes>
+            </BrowserRouter>
         </div>
     )
 }
