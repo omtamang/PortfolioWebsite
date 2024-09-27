@@ -20,7 +20,7 @@ export default function Hero() {
 
     return (
         <div>
-            <div className="md:max-w-[1200px] px-6 m-auto md:flex justify-between 
+            <div className="md:max-w-[1200px] px-6 m-auto md:flex justify-between sm:pt-[140px]
             h-[600px] font-poopins pt-[100px] md:h-screen md:pt-[120px] dark:bg-black">
                 <div>
                     <div className="md:py-8 dark:text-green-400">

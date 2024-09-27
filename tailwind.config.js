@@ -10,7 +10,8 @@ module.exports = {
         poopins :["Poppins", "sans-serif"],
       },
         screens: {
-        'vsm': '375px',
+        'vsm': '320px',
+        'sm': '400px',
       }
     },
   },

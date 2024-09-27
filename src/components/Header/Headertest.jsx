@@ -6,7 +6,7 @@ import { useAuth } from "../Security/Authcontext";
 
 
 export default function Headertest() {
-    const [isOpen, setOpen] = useState()
+    const [isOpen, setOpen] = useState() 
 
     const toggleMenu = () => {
         setOpen(!isOpen);
@@ -20,10 +20,10 @@ export default function Headertest() {
     }
 
     return (
-        <header className={`${mode && "dark"} fixed md:flex md:justify-center md:w-full bg-[#FFFEBC] dark:bg-black`}>
-            <nav className=" flex justify-between w-full space-x-[100px] px-11 py-8 md:w-[1200px] md:m-auto">
+        <header className={`${mode && "dark"} fixed z-20 md:flex md:justify-center md:w-full bg-[#FFFEBC] dark:bg-black`}>
+            <nav className=" flex justify-between w-full vsm:space-x-[100px] sm:space-x-[110px] px-11 py-8 md:w-[1200px] md:m-auto">
                 <div>
-                    <p className="text-sm font-light md:text-3xl cursor-pointer vsm:text-sm w-full dark:text-white">Om Tamang</p>
+                    <p className="sm:text-xl font-light md:text-3xl cursor-pointer vsm:text-sm dark:text-white">Om Tamang</p>
                 </div>
                 <ul className="md:flex hidden justify-between w-4/12 font-medium cursor-pointer dark:text-white pt-2">
                     <li className="hover:text-green-500"><Link to={'/'}>Home</Link></li>
@@ -44,8 +44,8 @@ export default function Headertest() {
             </nav>
             {isOpen ? 
                     (
-                        <ul className="text-center flex-row space-y-2 font-poopins text-[14px] bg-[#FFFEBC] pb-6 font-medium ">
-                            <li>Home</li>
+                        <ul className="text-center flex-row space-y-2 font-poopins text-[14px] bg-[#FFFEBC] dark:bg-black dark:text-white pb-6 font-medium ">
+                            <li><Link to={'/'}>Home</Link></li>
                             <li><Link to={'/allwork'}>Work</Link></li>
                             <li><Link to={'/about'}>About me</Link></li>
                             <li className="transition ease-out duration-500 dark:bg-slate-500
