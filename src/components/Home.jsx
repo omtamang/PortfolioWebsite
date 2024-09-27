@@ -1,5 +1,5 @@
 import Work from "./FeaturedWork/Work";
-import Footer from "./Footer/Footer";
+import Footer2 from "./Footer/Footer2";
 import Headertest from "./Header/Headertest";
 import Hero from "./HeroSection/Hero";
 import { useAuth } from "./Security/Authcontext";
@@ -29,7 +29,7 @@ export default function Home() {
             </div>
 
             <div className="dark:bg-black">
-                <Footer/>
+                <Footer2/>
             </div>
         </div>
     )

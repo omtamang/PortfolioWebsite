@@ -8,6 +8,9 @@ module.exports = {
     extend: {
       fontFamily: {
         poopins :["Poppins", "sans-serif"],
+      },
+        screens: {
+        'vsm': '375px',
       }
     },
   },

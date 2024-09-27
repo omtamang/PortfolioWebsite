@@ -20,7 +20,8 @@ export default function Hero() {
 
     return (
         <div>
-            <div className="md:max-w-[1200px] px-6 m-auto md:flex justify-between h-[500px] font-poopins pt-[100px] md:h-screen md:pt-[120px] dark:bg-black">
+            <div className="md:max-w-[1200px] px-6 m-auto md:flex justify-between 
+            h-[600px] font-poopins pt-[100px] md:h-screen md:pt-[120px] dark:bg-black">
                 <div>
                     <div className="md:py-8 dark:text-green-400">
                         <p ref={animate} className="md:text-[64px] md:leading-tight text-3xl font-black font-poopins">
@@ -43,23 +44,28 @@ export default function Hero() {
                         </p>
                     </div>
 
-                    <div className="flex md:flex justify-between md:justify-start md:space-x-8">
+                    <div className="flex-col md:flex justify-center space-y-4 md:justify-start md:space-x-8 ">
                         <div className="flex space-x-8">
                             <button className="transition ease-out duration-500 bg-black md:h-10 h-8 text-white font-medium md:text-[24px] border 
                             rounded-full md:w-[180px] w-[120px] hover:bg-green-500 hover:text-slate-800 hover:font-bold dark:hover:border-black">
                                 View Work
                             </button>
+
+                            <a href={Omtamang} download={Omtamang}><button className="hidden md:block transition ease-out duration-500 bg-transparent dark:text-white 
+                                dark:border-white text-black font-medium md:text-[24px] border-2 border-black rounded-full md:w-[200px] w-[120px] hover:font-bold">
+                                Download CV
+                                </button></a>
                             
                         </div>
 
                         <div>
-                            <a href={Omtamang} download={Omtamang}><button className="transition ease-out duration-500 bg-transparent dark:text-white 
+                            <a href={Omtamang} download={Omtamang}><button className="md:hidden flex transition ease-out duration-500 bg-transparent dark:text-white 
                                 dark:border-white text-black font-medium md:text-[24px] border-2 border-black rounded-full md:w-[200px] w-[120px] hover:font-bold">
                                 Download CV
                                 </button></a>
                         </div>
 
-                        <div className="md:hidden text-2xl flex  space-x-7 md:justify-between w-4/12 dark:text-white">
+                        <div className="md:hidden text-2xl flex space-x-7 md:justify-between w-3/12 dark:text-white">
                             <div className="pb-4">
                                 <a href="instagram.com/omtamang88/"><FontAwesomeIcon icon={faInstagram}/></a>
                             </div>

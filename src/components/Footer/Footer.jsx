@@ -18,7 +18,7 @@ export default function Footer() {
 
             {/* socials */}
 
-            <div className="text-center md:flex md:flex-row flex justify-between w-[500px] m-auto mt-11 md:mt-[150px]">
+            <div className="text-center md:flex md:flex-row flex justify-evenly m-auto mt-11 md:mt-[150px]">
                 <div>
                     <div className="text-white text-start md:text-2xl w-[400px] m-auto">
                         <FontAwesomeIcon icon={faLocation}/>
@@ -29,12 +29,12 @@ export default function Footer() {
                 </div>
 
                 {/* Social Links */}
-                <div className="text-white md:mt-0">
+                <div className="text-white">
                     <div className="text-start text-sm font-mono font-medium md:w-full w-[400px] m-auto">
                         SOCIAL
                     </div>
 
-                    <div className="md:flex flex-row text-start md:mt-0 mt-1 text-2xl md:justify-between w-[400px] m-auto md:w-[200px] md:text-3xl md:pt-3 cursor-pointer">
+                    <div className="md:flex-col flex-col text-start md:mt-0 mt-1 text-2xl md:justify-between w-[400px] m-auto md:w-[200px] md:text-3xl md:pt-3 cursor-pointer">
                         <div>
                             <FontAwesomeIcon className="hover:text-gray-400" icon={faInstagram}/>
                         </div>
