@@ -1,6 +1,6 @@
 import Work from "./FeaturedWork/Work";
 import Footer from "./Footer/Footer";
-import Header from "./Header/Header";
+import Headertest from "./Header/Headertest";
 import Hero from "./HeroSection/Hero";
 import { useAuth } from "./Security/Authcontext";
 import Skill from "./Skills/Skill";
@@ -13,7 +13,7 @@ export default function Home() {
     return (
         <div className={`${mode && "dark"}`}>
             <div className="bg-[#FFFEBC] dark:bg-black">
-                <Header/>
+                <Headertest/>
             </div>
 
             <div className="bg-[#FFFEBC] dark:bg-black">

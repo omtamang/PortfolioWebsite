@@ -20,7 +20,7 @@ export default function Header(){
 
     return (
         <div className={`${mode && "dark"}`}>
-            <div className="fixed w-full z-40 bg-[#FFFEBC] pt-7 pb-7 font-poopins dark:bg-black">
+            <div className="fixed md:w-full z-40 bg-[#FFFEBC] pt-7 pb-7 font-poopins dark:bg-black">
                 <nav className=" flex justify-between max-w-[400px] md:max-w-[1200px] m-auto">
                     <span className="text-xl font-light md:text-3xl cursor-pointer w-full dark:text-white">Om Tamang 
                     {isOpen ? (
@@ -47,7 +47,7 @@ export default function Header(){
                     </ul>
 
                    
-                    <button className="text-xl md:hidden fixed right-3 text-gray-600" onClick={toggleMenu} >
+                    <button className="text-xl md:hidden fixed right-[1000px] dark:text-white  text-gray-600" onClick={toggleMenu} >
                         <FontAwesomeIcon icon={faBars} />
                     </button>
                     
