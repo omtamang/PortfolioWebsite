@@ -38,7 +38,7 @@ export default function Headertest() {
                             {mode ? <FontAwesomeIcon icon={faMoon}/> : <FontAwesomeIcon className="text-black hover:text-green-500" icon={faSun}/>}
                     </button>
                 <div className="md:hidden">
-                    <FontAwesomeIcon icon={faBars} onClick={toggleMenu}/>
+                    <FontAwesomeIcon icon={faBars} className="dark:text-white" onClick={toggleMenu}/>
                 </div>
 
             </nav>
