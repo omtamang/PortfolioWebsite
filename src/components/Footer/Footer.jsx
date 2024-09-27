@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Footer() {
     return (
-        <div className="bg-black md:mt-[100px] mt-11 h-auto md:h-screen">
+        <div className="bg-black md:pt-[100px] mt-11 h-auto md:h-screen">
             <div className="md:max-w-[1200px] m-auto md:text-4xl md:w-full w-[400px] md:pt-[150px] text-white font-poopins py-8 md:py-11 text-center">
                 <p>Interested in working together?<br/> Drop me a message and let’s bring your ideas to life.</p>
             </div>
