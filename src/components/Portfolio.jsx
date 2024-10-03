@@ -3,6 +3,7 @@ import Home from "./Home";
 import Allwork from "./FeaturedWork/Allwork"
 import AuthProvider from "./Security/Authcontext";
 import Pagenotfound from "./PageNotFound/Pagenotfound";
+import Aboutme from "./About/Aboutme";
 
 
 export default function Portfolio(){
@@ -13,6 +14,7 @@ export default function Portfolio(){
                     <Routes>
                         <Route path="/" element={<Home/>}/>
                         <Route path="/allwork" element={<Allwork/>}/>
+                        <Route path="/about" element={<Aboutme/>}/>
                         <Route path="*" element={<Pagenotfound/>}/>
                     </Routes>
                 </BrowserRouter>
