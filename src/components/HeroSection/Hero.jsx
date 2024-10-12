@@ -4,6 +4,7 @@ import Omtamang from "./Omtamang.pdf";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
 import gsap from 'gsap';
+import { Link } from "react-router-dom";
 
 export default function Hero() {
 
@@ -48,7 +49,7 @@ export default function Hero() {
                         <div className="flex space-x-8">
                             <button className="transition ease-out duration-500 bg-black md:h-10 h-8 text-white font-medium md:text-[24px] border 
                             rounded-full md:w-[180px] w-[120px] hover:bg-green-500 hover:text-slate-800 hover:font-bold dark:hover:border-black">
-                                View Work
+                                <Link to={"/allwork"}>View Work</Link>
                             </button>
 
                             <a href={Omtamang} download={Omtamang}><button className="hidden md:block transition ease-out duration-500 bg-transparent dark:text-white 

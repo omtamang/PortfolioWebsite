@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { useAuth } from "../Security/Authcontext"
 
 
@@ -36,7 +37,7 @@ export default function Work() {
             <div className="md:mt-[80px] mt-11 text-center font-poopins w-full pb-11">
                 <button className="transition ease-out duration-500 text-black dark:text-slate-300 font-light md:text-[36px] animate-bounce
                  rounded-xl hover:text-gray-500 underline underline-offset-8 decoration-1 hover:decoration-2">
-                    See More Work
+                    <Link to={"/allwork"}>See More Work</Link>
                 </button>
             </div>
         </div>

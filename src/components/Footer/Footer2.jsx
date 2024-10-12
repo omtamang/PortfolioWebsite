@@ -1,6 +1,7 @@
 import { faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import {  faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 
 
 export default function Footer2(){
@@ -10,7 +11,7 @@ export default function Footer2(){
                 <div className="pt-4">
                     <p className="text-2xl">Want to work together?</p>
                     <button className="text-xl pt-3 underline underline-offset-8 decoration-1 cursor-pointer hover:text-slate-400">
-                        Get In touch
+                        <Link to={"/hire"}>Get In Touch</Link>
                     </button>
                 </div>
 

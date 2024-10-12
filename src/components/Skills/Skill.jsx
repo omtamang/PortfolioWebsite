@@ -53,7 +53,7 @@ export default function Skill() {
 
                 <div className="bg-white h-[210px] md:max-w-[400px] dark:bg-slate-700 dark:text-white md:h-[250px] md:rounded-2xl rounded-xl shadow-md md:shadow-2xl p-2">
                     <div className="w-full h-[100px] flex justify-center md:pt-3">
-                        <img alt="SpringBoot" className="border rounded-full md:w-[80px]"
+                        <img alt="Github" className="border rounded-full md:w-[80px]"
                         src="https://seeklogo.com/images/G/github-logo-5F384D0265-seeklogo.com.png"/>
                     </div>
                     <p className="text-center md:text-[20px] md:pt-2 text-[20px]">Git</p>
@@ -62,7 +62,7 @@ export default function Skill() {
 
                 <div className="bg-white h-[210px] md:max-w-[400px] dark:bg-slate-700 dark:text-white md:h-[250px] md:rounded-2xl rounded-xl shadow-md md:shadow-2xl p-2">
                     <div className="w-full h-[100px] flex justify-center md:pt-3">
-                        <img alt="SpringBoot" className="border rounded-full md:w-[80px] object-contain"
+                        <img alt="Bootstrap" className="border rounded-full md:w-[80px] object-contain"
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1280px-Bootstrap_logo.svg.png"/>
                     </div>
                     <p className="text-center md:text-[20px] md:pt-2 text-[20px]">Bootstrap</p>

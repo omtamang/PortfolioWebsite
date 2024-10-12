@@ -14,7 +14,7 @@ export default function Allwork() {
             </div>
 
             {/* AllWOrk */}
-            <div className="dark:bg-slate-800 pb-11">
+            <div className="dark:bg-slate-900 pb-11">
                     <div className=" md:max-w-[1200px] max-w-[400px] m-auto h-auto pt-[100px]">
                         <div className="pt-11 text-center font-poopins text-[36px] dark:text-white">
                             <p>Featured Work</p>
