@@ -1,64 +1,116 @@
-import { useState } from "react"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Omtamang from "./Omtamang.pdf";
+import { useGSAP } from "@gsap/react";
+import { useRef } from "react";
+import gsap from 'gsap';
 import { Link } from "react-router-dom";
-import { useAuth } from "../Security/Authcontext";
 
-export default function Header(){
-    const [isOpen, setOpen] = useState(false);
+export default function Hero() {
+    const containerRef = useRef(null);
+    const titleRef = useRef(null);
+    const descriptionRef = useRef(null);
+    const ctaRef = useRef(null);
+    const socialRef = useRef(null);
 
-    const toggleMenu = () => {
-        setOpen(!isOpen);
-    }
+    useGSAP(() => {
+        const tl = gsap.timeline();
 
-    const authContext = useAuth()
-    const mode = authContext.mode
+        tl.from(titleRef.current, {
+            y: 50,
+            opacity: 0,
+            duration: 1,
+            ease: "power3.out"
+        })
+        .from(descriptionRef.current, {
+            y: 30,
+            opacity: 0,
+            duration: 0.8,
+            ease: "power3.out"
+        }, "-=0.5")
+        .from(ctaRef.current.children, {
+            y: 20,
+            opacity: 0,
+            duration: 0.6,
+            stagger: 0.2,
+            ease: "power3.out"
+        }, "-=0.3")
+        .from(socialRef.current.children, {
+            y: 20,
+            opacity: 0,
+            duration: 0.6,
+            stagger: 0.1,
+            ease: "power3.out"
+        }, "-=0.3");
 
-    function toggleMode() {
-        authContext.toogle()
-    }
+    }, { scope: containerRef });
 
     return (
-        <div className={`${mode && "dark"}`}>
-            <div className="fixed md:w-full z-40 bg-[#FFFEBC] pt-7 pb-7 font-poopins dark:bg-black">
-                <nav className=" flex justify-between max-w-[400px] md:max-w-[1200px] m-auto">
-                    <span className="text-xl font-light md:text-3xl cursor-pointer w-full dark:text-white">Om Tamang 
-                    {isOpen ? (
-                        <ul className="flex-col md:hidden font-normal text-sm space-y-3 text-center dark:text-white">
-                        <Link to={"/allwork"}><li>Home</li></Link>
-                            <Link to={"/allwork"}><li>Work</li></Link>
-                            <li>About Me</li>
-                            <li className="pb-1 ">
-                            <button className="font-bold bg-black text-white rounded-full p-1 w-[100px] hover:text-black hover:bg-green-500">
-                                HIRE ME
-                            </button></li>
-                        </ul>
-                    ): null}</span>
+        <div ref={containerRef} className="h-screen overflow-y-auto">
+            <div className="px-4 sm:px-6 md:max-w-[1200px] mx-auto md:flex justify-between 
+                min-h-screen py-8 sm:py-12 md:py-16 font-poopins dark:bg-black">
+                <div className="w-full md:w-auto flex flex-col justify-center">
+                    <div className="md:py-8 dark:text-green-400">
+                        <h1 ref={titleRef} className="text-3xl sm:text-4xl md:text-[64px] leading-tight font-black font-poopins">
+                            Hi, I'm Om Tamang,<br/>
+                            a Full-Stack Developer.
+                        </h1>
+                    </div>
 
-                    <ul className="hidden md:flex md:justify-around font-medium w-8/12  pt-2 dark:text-white">
-                        <Link to={"/"}><li className="cursor-pointer hover:text-green-500">Home</li></Link>
-                        <Link to={"/allwork"}><li className="cursor-pointer hover:text-green-500">Work</li></Link>
-                        <li className="cursor-pointer hover:text-green-500">About Me</li>
-                        <li className=" transition ease-out duration-500 font-bold dark:bg-slate-500 text-center
-                        bg-black text-white rounded-full cursor-pointer w-[120px] h-7 text-xl hover:text-slate-800 hover:bg-green-500">
-                            HIRE ME
-                        </li>
-                        
-                    </ul>
+                    <section ref={descriptionRef} className="mt-4 sm:mt-6 dark:text-slate-300">
+                        <p className="text-sm sm:text-base md:text-[20px] w-full sm:w-10/12 md:w-8/12">
+                            "Building seamless digital experiences with React JS and Spring Boot.
+                            I specialize in creating dynamic, responsive web applications that blend
+                            powerful front-end interfaces with robust back-end solutions."
+                        </p>
+                    </section>
 
-                   
-                    <button className="text-xl md:hidden fixed right-[1000px] dark:text-white  text-gray-600" onClick={toggleMenu} >
-                        <FontAwesomeIcon icon={faBars} />
-                    </button>
-                    
-                    <button className=" transition ease-out duration-500 font-bold items-center
-                        text-white rounded-full  text-2xl hover:text-green-500"
-                        onClick={toggleMode}>
-                            {mode ? <FontAwesomeIcon icon={faMoon}/> : <FontAwesomeIcon className="text-black hover:text-green-500" icon={faSun}/>}
-                    </button>
-                    
-                </nav>
+                    <div className="mt-6 sm:mt-8 md:mt-11">
+                        <p className="font-black text-lg sm:text-xl md:text-[24px] dark:text-slate-300">
+                            Let's create something exceptional together.
+                        </p>
+                    </div>
+
+                    <div ref={ctaRef} className="mt-6 sm:mt-8 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 md:space-x-8">
+                        <button className="transition ease-out duration-500 bg-black h-12 sm:h-10 text-white font-medium text-base sm:text-lg md:text-[24px] border 
+                            rounded-full w-full sm:w-[180px] hover:bg-green-500 hover:text-slate-800 hover:font-bold dark:hover:border-black">
+                            <Link to={"/allwork"}>View Work</Link>
+                        </button>
+
+                        <a href={Omtamang} download={Omtamang} className="block sm:inline-block w-full sm:w-auto">
+                            <button className="transition ease-out duration-500 bg-transparent dark:text-white 
+                                dark:border-white text-black font-medium text-base sm:text-lg md:text-[24px] border-2 border-black rounded-full w-full sm:w-[200px] h-12 sm:h-10 hover:font-bold">
+                                Download CV
+                            </button>
+                        </a>
+                    </div>
+
+                    <div ref={socialRef} className="flex text-2xl space-x-6 mt-8 sm:mt-10 md:hidden dark:text-white">
+                        <a href="https://www.instagram.com/omtamang88/" aria-label="Instagram">
+                            <FontAwesomeIcon icon={faInstagram} className="hover:text-green-500 transition-colors"/>
+                        </a>
+                        <a href="https://www.linkedin.com/in/om-tamang-31b1a0160/" aria-label="LinkedIn">
+                            <FontAwesomeIcon icon={faLinkedin} className="hover:text-green-500 transition-colors"/>
+                        </a>
+                        <a href="https://github.com/omtamang" aria-label="GitHub">
+                            <FontAwesomeIcon icon={faGithub} className="hover:text-green-500 transition-colors"/>
+                        </a>
+                    </div>
+                </div>
+
+                <div ref={socialRef} className="hidden md:flex md:flex-col md:justify-center md:text-5xl cursor-pointer dark:text-white">
+                    <a href="https://www.instagram.com/omtamang88/" className="mb-6" aria-label="Instagram">
+                        <FontAwesomeIcon icon={faInstagram} className="hover:text-green-500 transition-colors"/>
+                    </a>
+                    <a href="https://www.linkedin.com/in/om-tamang-31b1a0160/" className="mb-6" aria-label="LinkedIn">
+                        <FontAwesomeIcon icon={faLinkedin} className="hover:text-green-500 transition-colors"/>
+                    </a>
+                    <a href="https://github.com/omtamang" aria-label="GitHub">
+                        <FontAwesomeIcon icon={faGithub} className="hover:text-green-500 transition-colors"/>
+                    </a>
+                </div>
             </div>
         </div>
     )
 }
+
