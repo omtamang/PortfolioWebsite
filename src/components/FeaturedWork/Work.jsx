@@ -28,10 +28,12 @@ export default function Work() {
                     <p className="pt-2">Weather App</p>
                 </div>
 
-                <div>
-                    <img alt="daraz" className="md:w-[360px] md:h-[230px] w-full h-[100px] object-cover"  src="https://www.fiscalnepal.com/wp-content/uploads/2024/06/Daraz-Logo.jpg"/>
-                    <p className="pt-2">Daraz Clone</p>
-                </div>
+                <a href="https://omtamang.github.io/Daraz-Clone/">
+                    <div>
+                        <img alt="daraz" className="md:w-[360px] md:h-[230px] w-full h-[100px] object-cover"  src="https://www.fiscalnepal.com/wp-content/uploads/2024/06/Daraz-Logo.jpg"/>
+                        <p className="pt-2">Daraz Clone</p>
+                    </div>
+                </a>
             </div>
 
             <div className="md:mt-[80px] mt-11 text-center font-poopins w-full pb-11">

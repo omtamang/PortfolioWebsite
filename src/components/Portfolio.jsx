@@ -4,6 +4,7 @@ import Allwork from "./FeaturedWork/Allwork"
 import AuthProvider from "./Security/Authcontext";
 import Pagenotfound from "./PageNotFound/Pagenotfound";
 import Aboutme from "./About/Aboutme";
+import Hireme from "./HireMe/Hireme";
 
 
 export default function Portfolio(){
@@ -16,6 +17,7 @@ export default function Portfolio(){
                         <Route path="/allwork" element={<Allwork/>}/>
                         <Route path="/about" element={<Aboutme/>}/>
                         <Route path="*" element={<Pagenotfound/>}/>
+                        <Route path="/hireme" element={<Hireme/>}/>
                     </Routes>
                 </BrowserRouter>
             </AuthProvider>

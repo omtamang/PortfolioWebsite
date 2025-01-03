@@ -23,10 +23,10 @@ export default function Headertest() {
     const normalLink = ''
 
     return (
-        <header className={`${mode && "dark"} fixed z-20 md:flex md:justify-center md:w-full bg-[#FFFEBC] dark:bg-black`}>
+        <header className={`${mode && "dark"} fixed z-20 md:flex md:justify-center w-full md:w-full bg-[#FFFEBC] dark:bg-black`}>
             <nav className=" flex justify-between w-full vsm:space-x-[100px] sm:space-x-[110px] px-11 py-8 md:w-[1200px] md:m-auto">
                 <div>
-                    <p className="sm:text-sm font-light md:text-3xl cursor-pointer vsm:text-sm dark:text-white">Om Tamang</p>
+                    <img src="/img/logo.webp" className="h-11 md:h-11"/>
                 </div>
                 <ul className="md:flex hidden justify-between w-4/12 font-medium cursor-pointer dark:text-white pt-2">
                     <li className="hover:text-green-500"><NavLink to={'/'} className={({isActive}) => 
@@ -36,7 +36,7 @@ export default function Headertest() {
                     <li className="hover:text-green-500"><NavLink to={'/about'} className={({isActive}) => 
             isActive ? activeLink : normalLink}>About me</NavLink></li>
                     <li className="transition ease-out duration-500 dark:bg-slate-500
-                        bg-black text-white rounded-xl font-bold text-center p-1 w-[90px] hover:text-slate-800 hover:bg-green-500"><NavLink to={'/hire'}>HIRE ME</NavLink></li>
+                        bg-black text-white rounded-xl font-bold text-center p-1 w-[90px] hover:text-slate-800 hover:bg-green-500"><NavLink to={'/hireme'}>HIRE ME</NavLink></li>
                 </ul>
                 <button className=" transition ease-out duration-500 font-bold items-center
                         text-white rounded-full  md:text-2xl  hover:text-green-500"

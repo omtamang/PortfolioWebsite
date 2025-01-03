@@ -79,7 +79,7 @@ export default function Skill() {
                     <div className="skill-card bg-white h-[210px] md:max-w-[400px] dark:bg-slate-700 dark:text-white md:h-[250px] md:rounded-2xl rounded-xl shadow-md md:shadow-2xl p-2 transition-shadow duration-300">
                         <div className="w-full h-[100px] flex justify-center md:pt-3">
                             <img alt="Github" className="border rounded-full md:w-[80px]"
-                            src="https://seeklogo.com/images/G/github-logo-5F384D0265-seeklogo.com.png"/>
+                            src="https://cdn-icons-png.flaticon.com/512/25/25231.png"/>
                         </div>
                         <p className="text-center md:text-[20px] md:pt-2 text-[20px]">Git</p>
                         <p className="text-center md:text-sm text-[9px] text-slate-500 font-light md:pt-2 md:px-11 dark:text-slate-300">"I use GitHub to collaborate on projects, manage code efficiently, and track version control for smooth development workflows."</p>
